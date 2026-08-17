@@ -1,0 +1,211 @@
+/* ================================
+CONTACT
+================================ */
+
+.contact {
+    padding: 90px 80px 40px;
+    background: #0b0b0b;
+    text-align: center;
+}
+
+.contact-title {
+    font-size: 45px;
+    color: #D89C29;
+    margin-bottom: 18px;
+}
+
+.contact-intro {
+    max-width: 650px;
+    margin: 0 auto 28px;
+    color: #d7d7d7;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+/* ================================
+LOCATION
+================================ */
+
+.contact-location {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    color: #aaa;
+    font-size: 14px;
+
+    margin-bottom: 40px;
+}
+
+.contact-location svg {
+    color: #D89C29;
+    font-size: 16px;
+}
+
+/* ================================
+CONTACT GRID
+================================ */
+
+.contact-grid {
+    max-width: 900px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 16px;
+}
+
+/* ================================
+CONTACT CARD
+================================ */
+
+.contact-card {
+    text-decoration: none;
+
+    background: #141414;
+
+    border: 1px solid rgba(216,156,41,.15);
+
+    border-radius: 18px;
+
+    padding: 24px 16px;
+
+    transition: .35s;
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+
+    border-color: #D89C29;
+
+    box-shadow:
+        0 12px 30px rgba(216,156,41,.15);
+}
+
+.contact-icon {
+    font-size: 24px;
+
+    color: #D89C29;
+
+    margin-bottom: 14px;
+}
+
+.contact-card h3 {
+    color: white;
+
+    font-size: 17px;
+
+    margin-bottom: 6px;
+}
+
+.contact-card p {
+    color: #999;
+
+    font-size: 13px;
+
+    margin: 0;
+}
+
+/* ================================
+CV BUTTON
+================================ */
+
+.contact-cv {
+    margin-top: 35px;
+}
+
+.cv-button {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    padding: 12px 24px;
+
+    background: #D89C29;
+
+    color: #111;
+
+    text-decoration: none;
+
+    border-radius: 30px;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    transition: .3s;
+}
+
+.cv-button:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 8px 25px rgba(216,156,41,.25);
+}
+
+/* ================================
+FOOTER
+================================ */
+
+.contact-footer {
+    margin-top: 70px;
+
+    padding-top: 20px;
+
+    border-top: 1px solid rgba(255,255,255,.08);
+}
+
+.contact-footer p {
+    color: #666;
+
+    font-size: 12px;
+}
+
+/* ================================
+TABLET
+================================ */
+
+@media (max-width: 900px) {
+
+    .contact {
+        padding: 75px 30px 35px;
+    }
+
+    .contact-title {
+        font-size: 40px;
+    }
+
+    .contact-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* ================================
+MOBILE
+================================ */
+
+@media (max-width: 600px) {
+
+    .contact {
+        padding: 65px 20px 30px;
+    }
+
+    .contact-title {
+        font-size: 34px;
+    }
+
+    .contact-intro {
+        font-size: 16px;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+}

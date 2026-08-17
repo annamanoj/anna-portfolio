@@ -1,0 +1,209 @@
+.hero-image-container{
+
+    position:relative;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    width:650px;
+
+    height:650px;
+
+}
+
+/* Background Glow */
+
+.glow{
+
+    position:absolute;
+
+    width:500px;
+
+    height:500px;
+
+    border-radius:50%;
+
+    background:radial-gradient(
+        circle,
+        rgba(216,156,41,.35),
+        transparent 70%
+    );
+
+    filter:blur(30px);
+
+}
+.glow{
+    position:absolute;
+    width:580px;
+    height:580px;
+    border-radius:50%;
+    background:radial-gradient(
+        circle,
+        rgba(216,156,41,.35),
+        transparent 70%
+    );
+
+    filter:blur(50px);
+}
+
+/* ================================
+   RINGS
+================================ */
+
+.ring {
+    position: absolute;
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+/* Inner Gold Ring */
+
+.ring-1 {
+    width: 490px;
+    height: 490px;
+
+    border: 5px solid #D89C29;
+
+    box-shadow:
+        0 0 12px rgba(216, 156, 41, .7),
+        0 0 30px rgba(216, 156, 41, .35);
+
+    animation: rotateClockwise 18s linear infinite;
+
+    z-index: 2;
+}
+
+
+/* Middle Ring */
+
+.ring-2 {
+    width: 530px;
+    height: 530px;
+
+    border: 2px solid rgba(255, 255, 255, .35);
+
+    box-shadow:
+        0 0 15px rgba(255, 255, 255, .12);
+
+    animation: rotateCounterClockwise 25s linear infinite;
+
+    z-index: 1;
+}
+
+
+/* Outer Dashed Gold Ring */
+
+.ring-3 {
+    width: 570px;
+    height: 570px;
+
+    border: 3px dashed rgba(216, 156, 41, .8);
+
+    box-shadow:
+        0 0 12px rgba(216, 156, 41, .6),
+        0 0 35px rgba(216, 156, 41, .25);
+
+    animation: rotateClockwise 15s linear infinite;
+
+    z-index: 1;
+}
+
+/* ================================
+   RING ANIMATIONS
+================================ */
+
+@keyframes rotateClockwise {
+
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+
+}
+
+
+@keyframes rotateCounterClockwise {
+
+    from {
+        transform: rotate(360deg);
+    }
+
+    to {
+        transform: rotate(0deg);
+    }
+
+}
+
+/* Photo Circle */
+
+.photo-circle{
+
+     width:490px;
+    height:490px;
+
+    border-radius:50%;
+
+    background:#efd48d;
+
+    overflow:hidden;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:flex-start;
+
+    position:relative;
+
+    z-index:5;
+
+}
+
+.hero-photo{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    object-position:center 10%;
+}
+
+/* Gears */
+
+
+
+.gear{
+    position:absolute;
+    color:#D89C29;
+    font-size:65px;
+    filter:drop-shadow(0 0 10px rgba(216,156,41,.5));
+}
+
+.gear-top{
+    top:60px;
+    right:30px;
+}
+
+.gear-bottom{
+    bottom:50px;
+    right:10px;
+}
+
+.gear{
+    animation: spin 20s linear infinite;
+}
+
+@keyframes spin{
+    from{
+        transform:rotate(0deg);
+    }
+    to{
+        transform:rotate(360deg);
+    }
+}
+
+
